@@ -1,0 +1,21 @@
+[Idea Note]
+
+1. make write function
+2. make strlen function
+3. make error-check function
+//=>
+	if length of str is 1 or empty: return 0;
+	when searching for every letter of str:
+		if str[i] is in-printable or +/-: return 0;
+		taking j as i + 1: if str has same letter since str[j] as str[i]: return 0;
+4. make put_nbr_base function(main part)
+5. take 'base' as a parameter
+6. make int error and check if 'base' has an error
+7. make int len and find out the length of base(to find out the base system)
+8. put given number(by parameter) to long type variable nb
+9. check if error == 1(meaning 'no problems')
+10. if nb is negative: reverse the sign and write '-'
+11. if nb is smaller than len(length of base): write base[nb]
+=> number 5 would be presented as same 5 if the base is 6, 7, 8, ...
+12. else: use recursion function to print 
+	ft_putnbr_base(nb / len, base) and ft_putnbr(nb % base, base)

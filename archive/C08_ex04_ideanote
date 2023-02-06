@@ -1,0 +1,34 @@
+[ALGORITHM BUILDING]
+
+<Goals>
+1. func gets the size of array as ac, and the array as av
+2. it makes each element of av to structure
+3. structure will be define as followed:
+
+typedef struct s_stock_str
+{
+	int size;
+	char *str;
+	char *copy;
+} 				t_stock_str;
+
+4. size: length of the string, str: the string, copy: the copy of the string.
+5. the order of the input from the av should be kept.
+6. returned array should be allocated in memory and str's last element should be set to 0
+7. if error occurs, it should return NULL pointer.
+
+<Idea Flow>
+1. make function that calculates the length of the string
+2. make function to duplicate the string by malloc(allocating new space)
+
+use malloc and create the char type array as big as src + 1
+check if the malloc is returned as NULL
+fill creatd array(dest) by the arguments of the str
+fill \0 at the last space of dest
+
+3. make main function that makes structure out of av's features
+
+use malloc and create the structure as big as the structure given from the header, and as many as (ac + 1): the last one should be filled with 0
+check if the malloc is returned as the NULL
+use 'while' and fill each structure with size, str, copy
+fill last element with str 0

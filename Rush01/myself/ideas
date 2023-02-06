@@ -1,0 +1,33 @@
+<ALGORITHM BUILDING>
+
+[1st idea]
+1. make double array
+2. fill the array with DFS method
+3. the fillings should not be doubled
+4. check if the array fits the answer condition
+5. if not, come back(backtracking)
+6. repeat act till it fits answer condition
+
+[teammate]
+
+<functions>
+is_ans1
+
+
+is_ans
+
+
+putarr1
+1. 
+
+putarr2
+1. with given x, from i to x, each with from j to 4,:
+
+main
+1. make 4x4 array
+2. return ERROR if number of arguments are wrong(argc)
+3. putarr1(arr, 0 , argv[1])
+4. if putarr1((*arr)[1], 0, 0, argv[1]) != 0
+	write each elements of array
+	else
+	return ERROR
